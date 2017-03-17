@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>NAVIST - Dead-simple navigation generator</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="css/bootstrap.css" />
+      <link rel="stylesheet" href="css/check.css" />
+      <link rel="stylesheet" href="css/glyphs.css" />
+      <link rel="stylesheet" href="css/nice-select.css" />
+      <link rel="stylesheet" href="css/navist.css" />
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="header">
+              <img src="images/navist_logo.svg" class="logo" />
+          </div>
+        </div><!-- Row header -->
+
+        <!-- Color Options -->
+        <div class="row optionContainer">
+            <span class="closer" data-closes=".colorOptions">-</span><h2 class="propertyHeader">Color Options</h2><br />
+            <div class="col-sm-6 col-xs-12 col-lg-3 stack colorOptions">
+              <div class="greyBox">
+                  <h2 class="propertyHeader">Text Color</h2><br />
+                  <input class="jscolor roundedCorners primary-color" value="FFFFFF" />
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 col-lg-3 stack colorOptions">
+              <div class="greyBox">
+                  <h2 class="propertyHeader">Background Color</h2><br />
+                  <input class="jscolor roundedCorners secondary-color" value="374452" />
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 col-lg-3 stack colorOptions">
+              <div class="greyBox">
+                  <h2 class="propertyHeader">Hover Background Color</h2><br />
+                  <input class="jscolor roundedCorners tertiary-color" value="E0B816" />
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 col-lg-3 stack colorOptions">
+              <div class="greyBox">
+                  <h2 class="propertyHeader">Hover Text Color</h2><br />
+                  <input class="jscolor roundedCorners hover-text-color" value="242424" />
+              </div>
+            </div>
+
+        </div> <!-- Option Container -->
+
+        <div class="row optionContainer">
+            <span class="closer" data-closes=".misc">-</span><h2 class="propertyHeader">Misc Options</h2><br />
+            <div class="greyBox misc col-sm-3 col-xs-12 col-lg-2">
+
+                <h2 class="propertyHeader">Rounded Corners</h2>
+                <section title=".slideTwo">
+                  <!-- .slideTwo -->
+                  <div class="slideTwo">
+                    <input type="checkbox" value="None" id="roundedCorners" name="check" />
+                    <label for="roundedCorners"></label>
+                  </div>
+                  <!-- end .slideTwo -->
+                </section>
+
+            </div>
+
+            <!-- Alignment -->
+            <div class="greyBox misc col-sm-3 col-xs-12 col-lg-2">
+              <h2 class="propertyHeader">Alignment</h2><br />
+                <select id="alignment">
+                  <option value="left">Left</option>
+                  <option value="center">Center</option>
+                  <option value="right">Right</option>
+                </select>
+            </div>
+
+        </div> <!-- Option Container -->
+
+        <div class="row optionContainer">
+            <div class="greyBox col-xs-12">
+              <h2 class="propertyHeader">Preview</h2>
+                <nav class="main-nav">
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>About Us</li></a>
+                        <a href="#"><li>Products</li></a>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row optionContainer">
+          <div class="col-sm-12 col-xs-12 col-lg-4 stack">
+            <div class="greyBox">
+                <h2 class="propertyHeader">HTML</h2><br />
+                The HTML content goes here
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-xs-12 col-lg-4 stack">
+            <div class="greyBox">
+                <h2 class="propertyHeader">CSS</h2><br />
+                The CSS or Maybe SASS? goes here
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-xs-12 col-lg-4 stack">
+            <div class="greyBox">
+                <h2 class="propertyHeader">JS</h2><br />
+                The JavaScript goes here
+            </div>
+          </div>
+
+
+
+      </div>
+  </body>
+
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jscolor.js"></script>
+  <script type="text/javascript" src="js/navist.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+</html>
